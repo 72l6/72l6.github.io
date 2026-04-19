@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talal Mohammed Al-Shammari - Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --accent-color: #3b82f6;
+            --bg-color: #f1f5f9;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 80px 40px;
+            border-radius: 24px;
+            text-align: center;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 800;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            color: #94a3b8;
+            margin-top: 15px;
+        }
+
+        .contact-bar {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .contact-bar a {
+            color: var(--white);
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .contact-bar a:hover {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+        }
+
+        section {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            margin-top: 0;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: '';
+            width: 4px;
+            height: 20px;
+            background-color: var(--accent-color);
+            border-radius: 4px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background-color: #eff6ff;
+            color: var(--accent-color);
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin: 4px;
+        }
+
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+        }
+
+        .item p {
+            margin: 5px 0;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .id-badge {
+            font-size: 0.8rem;
+            background: #f8fafc;
+            padding: 4px 8px;
+            border-radius: 6px;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 768px) {
+            .grid-layout { grid-template-columns: 1fr; }
+            header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Talal Mohammed Al-Shammari</h1>
+        <p>Software Engineering Student & AI Enthusiast</p>
+        <div class="contact-bar">
+            <a href="mailto:tlala9797@gmail.com">tlala9797@gmail.com</a>
+            <a href="https://github.com/72l6" target="_blank">GitHub Profile</a>
+        </div>
+    </header>
+
+    <div class="grid-layout">
+        <aside style="display: flex; flex-direction: column; gap: 30px;">
+            <section>
+                <h2>Education</h2>
+                <div class="item">
+                    <h3>B.S. in Software Engineering</h3>
+                    <p>University of Hail</p>
+                    <span class="id-badge">Student ID: 202204099</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>Technical Skills</h2>
+                <div style="margin: -4px;">
+                    <span class="skill-tag">HTML5 / CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Software Modeling</span>
+                    <span class="skill-tag">AI & Business Intelligence</span>
+                    <span class="skill-tag">UI/UX Design</span>
+                    <span class="skill-tag">Waterfall & Agile</span>
+                </div>
+            </section>
+        </aside>
+
+        <main style="display: flex; flex-direction: column; gap: 30px;">
+            <section>
+                <h2>Key Projects</h2>
+                <div class="item">
+                    <h3>University Clinics Booking System</h3>
+                    <p>Designed a digital appointment booking platform for university clinics, focusing on seamless user experience and optimized scheduling workflows.</p>
+                </div>
+                <div class="item">
+                    <h3>Software Process Simulation</h3>
+                    <p>Implemented stochastic modeling to analyze software development lifecycles, using tools like Insight Maker to predict task durations and defects.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Certifications & Experience</h2>
+                <div class="item">
+                    <h3>KAUST Academy</h3>
+                    <p>Active participant in the AI and Business Intelligence program (2025/2026), focusing on advanced data analytics and machine learning applications.</p>
+                </div>
+                <div class="item">
+                    <h3>Smart City Innovations</h3>
+                    <p>Research and conceptual design for AI integration in smart cities, aligned with Saudi Vision 2030 and NEOM development goals.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+
+</body>
+</html>

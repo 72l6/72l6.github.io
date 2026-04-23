@@ -1,28 +1,30 @@
 body {
-    background-image:url(https://manjaro.org/img/bg.svg);
-    background-size: auto;
+    background-image: url(https://manjaro.org/img/bg.svg);
+    background-size: cover;
     background-color: #f0f0f0;
-    background-size: contain;
     background-repeat: no-repeat;
-    background-position: -232px 232px;
+    background-position: center top;
     background-attachment: fixed;
-    width: 95%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
-#colspan{
+
+#colspan {
     background-color: white;
     background-position: center center;
-    box-shadow: 0 0 25px;
-    width: 30%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
     height: auto;
-    min-height: 1127.15px;
     text-align: justify;
-    float: left;
-    padding: 0 8px;
-    padding-right: 16px;
+    float: none;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
+
 .container-padding {
-    box-shadow: 0 0 25px;
-    width: 70%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
     height: auto;
     background-color: rgb(255, 255, 255);
     box-sizing: border-box;
@@ -30,18 +32,18 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     line-height: 22.5px;
-    margin-left: 34%;
-    padding-bottom: 20px;
-    padding-left: 16px;
-    padding-top: 0.15px;
+    margin-left: 0;
+    padding: 15px;
+    margin-top: 15px;
 }
+
 .padding { 
     text-align: left;
 }
+
 .padding-bottom {
-    box-shadow: 0 0 25px;
-    width: 70%;
-    position: bottom;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
     height: auto;
     background-color: rgb(255, 255, 255);
     box-sizing: border-box;
@@ -49,140 +51,92 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     line-height: 22.5px;
-    margin-left: 34%;
-    padding-bottom: 20px;
-    padding-left: 16px;
-    padding-top: 0.15px;
-    margin-top: 16px;
-}
-.load {
-    background-color: rgb(241, 241, 241);
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    box-sizing: border-box;
-    color: rgb(0, 0, 0);
-    font-family: "Roboto", sans-serif;
-    font-size: 12px;
-    line-height: 18px;
-}
-.progress {
-    background-color:  #009688 !important;
-    border-bottom-left-radius: 13px;
-    border-bottom-right-radius: 16px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    box-sizing: border-box;
-    color: rgb(0, 0, 0);
-    font-family: "Roboto", sans-serif;
-    font-size: 12px;
-    line-height: 18px;
-    color:  #ffff !important;
-    text-align: center;
-}
-.load2 {
-    background-color: rgb(241, 241, 241);
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    box-sizing: border-box;
-    color: rgb(0, 0, 0);
-    font-family: "Roboto", sans-serif;
-    font-size: 12px;
-    line-height: 18px;
-}
-.progress2 {
-    background-color:  #009688 !important;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    box-sizing: border-box;
-    color: rgb(0, 0, 0);
-    font-family: "Roboto", sans-serif;
-    font-size: 12px;
-    line-height: 18px;
-    color:  #ffff !important;
-    text-align: center;
-}
-.load3 {
-    background-color: rgb(241, 241, 241);
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    box-sizing: border-box;
-    color: rgb(0, 0, 0);
-    line-height: 18px;
-}
-.progress3 {
-    background-color: #009688 !important;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    color: #fff !important;
-    text-align: center;
-    line-height: 18px;
-    font-size: 12px;
-}
-.load4 {
-    background-color: rgb(241, 241, 241);
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    box-sizing: border-box;
-    color: rgb(0, 0, 0);
-    line-height: 18px;
-}
-.progress4 {
-    background-color: #009688 !important;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    color: #fff !important;
-    text-align: center;
-    line-height: 18px;
-    font-size: 12px;
-}
-.content1 { 
-    padding: 14px;
-}
-.content2 {
-    padding: 14px;
-}
-.content3 {
-    padding: 10px;
-}
-.content4 {
-    padding: 16px;
-}
-.content5 {
-    padding: 16px;
-}
-.content6 {
-    padding: 16px;
-}
-img  {
-    size: cover;
-    width: 100%;
-    height: 225.18px;
-    line-height: 1.5px;
-}
-h4{
-    color: white;
+    margin-left: 0;
     padding: 15px;
-    text-align: left;
-    margin-top: -50px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
+
+.load, .load2, .load3, .load4 {
+    background-color: rgb(241, 241, 241);
+    border-radius: 16px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+
+.progress, .progress2, .progress3, .progress4 {
+    background-color: #009688 !important;
+    border-radius: 16px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #ffff !important;
+    text-align: center;
+}
+
+.content1, .content2, .content3, .content4, .content5, .content6 { 
+    padding: 10px 0;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    display: block;
+}
+
+h4 {
+    color: #333;
+    padding: 15px 0;
+    text-align: left;
+    margin-top: 10px;
+}
+
 i {
     padding: 5px;
     color: #009688 !important;
 }
+
 hr {
-    border: -1px solid gray;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    #colspan {
+        width: 30%;
+        float: left;
+        min-height: 100vh;
+    }
+    
+    .container-padding {
+        width: 68%;
+        margin-left: 32%;
+        margin-top: 0;
+    }
+    
+    .padding-bottom {
+        width: 68%;
+        margin-left: 32%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 20px;
+    }
 }

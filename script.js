@@ -1,7 +1,7 @@
 const CONFIG = {
-    zGap: 1500,
-    camSpeed: 4.5,
-    starCount: 200
+    zGap: window.innerWidth < 768 ? 1000 : 1500,
+    camSpeed: window.innerWidth < 768 ? 3.5 : 4.5,
+    starCount: 150
 };
 
 const PROFILE_DATA = [
@@ -27,6 +27,7 @@ const items = [];
 const loopSize = PROFILE_DATA.length * CONFIG.zGap;
 
 function init() {
+    const isMobile = window.innerWidth < 768;
     PROFILE_DATA.forEach((data, i) => {
         const el = document.createElement('div');
         el.className = 'item';
@@ -41,7 +42,9 @@ function init() {
             card.className = 'card';
             card.innerHTML = `<h2>${data.title}</h2><p>${data.body}</p>`;
             el.appendChild(card);
-            items.push({ el, type: 'card', x: (Math.random() - 0.5) * 450, y: (Math.random() - 0.5) * 350, rot: (Math.random() - 0.5) * 12, baseZ: -i * CONFIG.zGap });
+            const xRange = isMobile ? 50 : 450;
+            const yRange = isMobile ? 50 : 350;
+            items.push({ el, type: 'card', x: (Math.random() - 0.5) * xRange, y: (Math.random() - 0.5) * yRange, rot: (Math.random() - 0.5) * 8, baseZ: -i * CONFIG.zGap });
         }
         world.appendChild(el);
     });
@@ -59,7 +62,12 @@ function init() {
     });
 }
 
-const lenis = new Lenis({ smooth: true, lerp: 0.1 });
+const lenis = new Lenis({
+    lerp: 0.1,
+    smoothWheel: true,
+    syncTouch: true
+});
+
 lenis.on('scroll', ({ scroll, velocity }) => {
     state.scroll = scroll;
     state.targetSpeed = velocity;

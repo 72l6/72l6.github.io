@@ -1,293 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>CV - Talal Al-Shammari</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TALAL // PORTFOLIO</title>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;800&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        #theme-toggle-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #333;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            z-index: 1000;
-            font-size: 16px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-            transition: background-color 0.3s, color 0.3s;
-        }
-        
-        #theme-toggle-btn:hover {
-            opacity: 0.8;
-        }
-
-        #lang-toggle-btn {
-            position: fixed;
-            bottom: 70px;
-            right: 20px;
-            background-color: #009688;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            z-index: 1000;
-            font-size: 14px;
-            font-weight: bold;
-            font-family: Tahoma, sans-serif;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-            transition: opacity 0.3s;
-        }
-
-        #lang-toggle-btn:hover {
-            opacity: 0.8;
-        }
-
-        body.dark-mode {
-            background-color: #121212 !important;
-            background-image: none !important;
-            color: #e0e0e0 !important;
-        }
-
-        body.dark-mode #colspan,
-        body.dark-mode .container-padding,
-        body.dark-mode .padding-bottom {
-            background-color: #1e1e1e !important;
-            color: #e0e0e0 !important;
-        }
-
-        body.dark-mode h2, 
-        body.dark-mode h3, 
-        body.dark-mode h4, 
-        body.dark-mode p,
-        body.dark-mode a,
-        body.dark-mode .lang {
-            color: #e0e0e0 !important;
-        }
-
-        body.dark-mode hr {
-            border-top: 1px solid #444;
-        }
-
-        body.dark-mode .load, 
-        body.dark-mode .load2, 
-        body.dark-mode .load3, 
-        body.dark-mode .load4 {
-            background-color: #333 !important;
-        }
-
-        body.dark-mode #theme-toggle-btn {
-            background-color: #f0f0f0;
-            color: #333;
-        }
-
-        body.arabic-mode {
-            direction: rtl;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body.arabic-mode #colspan {
-            float: right;
-            text-align: right;
-            padding-left: 16px;
-            padding-right: 8px;
-        }
-
-        body.arabic-mode .container-padding,
-        body.arabic-mode .padding-bottom {
-            margin-left: auto;
-            margin-right: 34%;
-        }
-
-        body.arabic-mode .padding {
-            text-align: right;
-        }
-
-        body.arabic-mode h4 {
-            text-align: right;
-        }
-        
-        body.arabic-mode i.fa {
-            padding-left: 5px;
-            padding-right: 0;
-        }
-        
-        h4 {
-            padding-top: 20px;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <div id="colspan">
-            <h4><span class="lang" data-en="TALAL AL-SHAMMARI" data-ar="طلال محمد الشمري">TALAL AL-SHAMMARI</span></h4>
-            <p><i class="fa fa-briefcase fa-fw large"></i><span class="lang" data-en="Software Engineer" data-ar="مهندس برمجيات">Software Engineer</span></p>
-            <p><i class="fa fa-home fa-fw large"></i><span class="lang" data-en="Hail, SAUDI ARABIA" data-ar="حائل، المملكة العربية السعودية">Hail, SAUDI ARABIA</span></p>
-            <p><i class="fa fa-id-card fa-fw large"></i>202204099</p>
-            <hr>
-            <h3><i class="fa fa-linux fa-fw large"></i><span class="lang" data-en="Skills" data-ar="المهارات">Skills</span></h3>
-            
-            <p>HTML5 / CSS3</p>
-            <div class="load">
-                <div class="progress" style="width:90%">90%</div>
-            </div>
-            
-            <p>JavaScript</p>
-            <div class="load2">
-                <div class="progress2" style="width:75%">75%</div>
-            </div>
-            
-            <p><span class="lang" data-en="Software Modeling" data-ar="نمذجة البرمجيات">Software Modeling</span></p>
-            <div class="load3">
-                <div class="progress3" style="width:85%">85%</div>
-            </div>
-            
-            <p><span class="lang" data-en="AI & Business Intelligence" data-ar="الذكاء الاصطناعي وذكاء الأعمال">AI & Business Intelligence</span></p>
-            <div class="load4">
-                <div class="progress4" style="width:80%">80%</div>
-            </div>
-            
-            <p><span class="lang" data-en="UI/UX Design" data-ar="تصميم واجهة وتجربة المستخدم (UI/UX)">UI/UX Design</span></p>
-            <div class="load4">
-                <div class="progress4" style="width:85%">85%</div>
-            </div>
-            
-            <p><span class="lang" data-en="Waterfall & Agile" data-ar="منهجيات أجايل والشلال (Waterfall & Agile)">Waterfall & Agile</span></p>
-            <div class="load4">
-                <div class="progress4" style="width:80%">80%</div>
-            </div>
-            
-            <p>SonarQube</p>
-            <div class="load4">
-                <div class="progress4" style="width:80%">80%</div>
-            </div>
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
+    <div class="noise"></div>
 
-            <hr>
-            <h3><i class="fa fa-envelope fa-fw large"></i><span class="lang" data-en="Contact" data-ar="التواصل">Contact</span></h3>
-            <p><a href="mailto:Tlala9797@gmail.com" style="color: black; text-decoration: none; font-size: 13px;">Tlala9797@gmail.com</a></p>
-            <p><a href="https://github.com/72l6" style="color: black; text-decoration: none;"><i class="fa fa-github fa-fw large"></i>github.com/72l6</a></p>
-            <hr>
-            <h3><i class="fa fa-language fa-fw large"></i><span class="lang" data-en="Language" data-ar="اللغات">Language</span></h3>
-            <p><span class="lang" data-en="Arabic" data-ar="العربية">Arabic</span></p>
-            <p><span class="lang" data-en="English" data-ar="الإنجليزية">English</span></p>
+    <div class="hud">
+        <div class="hud-top">
+            <span>ID: <strong>202204099</strong></span>
+            <div class="hud-line"></div>
+            <span>PORTFOLIO // 2026</span>
         </div>
-        <div class="container-padding">
-            <div class="padding">
-                <div class="content1">
-                    <h2><i class="fa fa-graduation-cap fa-fw large"></i><span class="lang" data-en="Education" data-ar="التعليم">Education</span></h2>
-                    <h3><span class="lang" data-en="University of Hail" data-ar="جامعة حائل">University of Hail</span></h3>
-                    <p><i class="fa fa-calendar fa-fw large"></i><span class="lang" data-en="2022 - Present" data-ar="2022 - الوقت الحالي">2022 - Present</span></p>
-                    <p><span class="lang" data-en="Bachelor of Software Engineering. Interested in AI, Web Development, and Software Quality." data-ar="طالب في تخصص هندسة البرمجيات. مهتم بمجالات الذكاء الاصطناعي، تطوير الويب، وجودة البرمجيات.">Bachelor of Software Engineering. Interested in AI, Web Development, and Software Quality.</span></p>
-                </div>
-            </div>
-        </div>
-        <div class="padding-bottom">
-            <div class="bottom">
-                <div class="content1">
-                    <h2><i class="fa fa-briefcase fa-fw large"></i><span class="lang" data-en="Projects & Experience:" data-ar="المشاريع والخبرات:">Projects & Experience:</span></h2>
-                    
-                    <h3><span class="lang" data-en="KAUST Academy" data-ar="أكاديمية كاوست (KAUST)">KAUST Academy</span></h3>
-                    <p><i class="fa fa-calendar fa-fw large"></i>2025 - 2026</p>
-                    <p><span class="lang" data-en="Active participant in the AI and Business Intelligence program (2025/2026), focusing on advanced data analytics and machine learning applications." data-ar="مشارك نشط في برنامج الذكاء الاصطناعي وذكاء الأعمال (2025/2026)، مع التركيز على التحليلات المتقدمة للبيانات وتطبيقات تعلم الآلة.">Active participant in the AI and Business Intelligence program (2025/2026), focusing on advanced data analytics and machine learning applications.</span></p>
-                </div>
-                <hr>
-                <div class="content2">
-                    <h3><span class="lang" data-en="Smart City Innovations" data-ar="ابتكارات المدن الذكية">Smart City Innovations</span></h3>
-                    <p><i class="fa fa-calendar fa-fw large"></i>2026</p>
-                    <p><span class="lang" data-en="Research and conceptual design for AI integration in smart cities, aligned with Saudi Vision 2030 and NEOM development goals." data-ar="بحث وتصميم مفاهيمي لدمج الذكاء الاصطناعي في المدن الذكية، بما يتماشى مع رؤية السعودية 2030 وأهداف تطوير نيوم.">Research and conceptual design for AI integration in smart cities, aligned with Saudi Vision 2030 and NEOM development goals.</span></p>
-                </div>
-                <hr>
-                <div class="content3">
-                    <h3><span class="lang" data-en="University Clinics Booking System" data-ar="نظام حجز العيادات الجامعية">University Clinics Booking System</span></h3>
-                    <p><i class="fa fa-calendar fa-fw large"></i>2026</p>
-                    <p><span class="lang" data-en="Designed a digital appointment booking platform for university clinics, focusing on seamless user experience and optimized scheduling workflows." data-ar="تصميم منصة رقمية لحجز المواعيد في العيادات الجامعية، مع التركيز على تجربة مستخدم سلسة وتحسين مسارات الجدولة.">Designed a digital appointment booking platform for university clinics, focusing on seamless user experience and optimized scheduling workflows.</span></p>
-                </div>
-                <hr>
-                <div class="content4">
-                    <h3><span class="lang" data-en="Software Process Simulation" data-ar="محاكاة العمليات البرمجية">Software Process Simulation</span></h3>
-                    <p><i class="fa fa-calendar fa-fw large"></i>2026</p>
-                    <p><span class="lang" data-en="Implemented stochastic modeling to analyze software development lifecycles, using tools like Insight Maker to predict task durations and defects." data-ar="تنفيذ نمذجة عشوائية (Stochastic Modeling) لتحليل دورات حياة تطوير البرمجيات، باستخدام أدوات مثل Insight Maker لتوقع مدد المهام والأخطاء المحتملة.">Implemented stochastic modeling to analyze software development lifecycles, using tools like Insight Maker to predict task durations and defects.</span></p>
-                </div>
-                <hr>
-                <div class="content6">
-                    <h3><span class="lang" data-en="Software Quality Analysis (SonarQube)" data-ar="تحليل جودة البرمجيات (SonarQube)">Software Quality Analysis (SonarQube)</span></h3>
-                    <p><i class="fa fa-calendar fa-fw large"></i>2026</p>
-                    <p><span class="lang" data-en="Comprehensive source code inspection using SonarScanner, analyzing bugs, and resolving JDK environment compatibility issues." data-ar="فحص شامل للكود المصدري باستخدام SonarScanner، تحليل الثغرات البرمجية، وحل مشاكل التوافق مع بيئة Java JDK.">Comprehensive source code inspection using SonarScanner, analyzing bugs, and resolving JDK environment compatibility issues.</span></p>
-                </div>
-            </div>
+        <div class="center-nav">SW_ENGINEER // DATA_STREAM</div>
+        <div class="hud-bottom">
+            <span>LOC: <strong>HAIL_SA</strong></span>
+            <div class="hud-line"></div>
+            <span>TALAL MOHAMMED AL-SHAMMARI</span>
         </div>
     </div>
 
-    <button id="lang-toggle-btn" onclick="toggleLanguage()">عربي</button>
-    <button id="theme-toggle-btn" onclick="toggleTheme()">
-        <i id="theme-icon" class="fa fa-moon-o"></i>
-    </button>
+    <div class="viewport" id="viewport">
+        <div class="world" id="world"></div>
+    </div>
 
-    <script>
-        const currentTheme = localStorage.getItem('theme');
-        if (currentTheme === 'dark') {
-            document.body.classList.add('dark-mode');
-            updateIcon('dark');
-        }
-
-        const currentLang = localStorage.getItem('lang') || 'en';
-        if (currentLang === 'ar') {
-            enableArabic();
-        }
-
-        function toggleTheme() {
-            const isDarkMode = document.body.classList.toggle('dark-mode');
-            if (isDarkMode) {
-                localStorage.setItem('theme', 'dark');
-                updateIcon('dark');
-            } else {
-                localStorage.setItem('theme', 'light');
-                updateIcon('light');
-            }
-        }
-
-        function updateIcon(theme) {
-            const icon = document.getElementById('theme-icon');
-            if (theme === 'dark') {
-                icon.classList.remove('fa-moon-o');
-                icon.classList.add('fa-sun-o');
-            } else {
-                icon.classList.remove('fa-sun-o');
-                icon.classList.add('fa-moon-o');
-            }
-        }
-
-        function toggleLanguage() {
-            if (document.body.classList.contains('arabic-mode')) {
-                enableEnglish();
-            } else {
-                enableArabic();
-            }
-        }
-
-        function enableArabic() {
-            document.body.classList.add('arabic-mode');
-            localStorage.setItem('lang', 'ar');
-            document.getElementById('lang-toggle-btn').innerText = 'EN';
-            const elements = document.querySelectorAll('.lang');
-            elements.forEach(el => {
-                el.innerText = el.getAttribute('data-ar');
-            });
-        }
-
-        function enableEnglish() {
-            document.body.classList.remove('arabic-mode');
-            localStorage.setItem('lang', 'en');
-            document.getElementById('lang-toggle-btn').innerText = 'عربي';
-            const elements = document.querySelectorAll('.lang');
-            elements.forEach(el => {
-                el.innerText = el.getAttribute('data-en');
-            });
-        }
-    </script>
+    <div class="scroll-proxy"></div>
+    <script src="script.js"></script>
 </body>
 </html>

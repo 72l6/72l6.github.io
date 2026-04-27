@@ -8,15 +8,24 @@
     --font-code: 'JetBrains Mono', monospace;
 }
 
-body, html {
+html {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
     margin: 0;
     padding: 0;
     background: var(--bg);
     color: var(--text);
     font-family: var(--font-display);
-    overflow: hidden;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     cursor: crosshair !important;
 }
 
@@ -33,26 +42,26 @@ body, html {
 
 .hud {
     position: fixed;
-    inset: 2rem;
+    inset: 1rem;
     z-index: 200;
     pointer-events: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-family: var(--font-code);
-    font-size: 10px;
+    font-size: 8px;
     color: rgba(255, 255, 255, 0.4);
     text-transform: uppercase;
 }
 
 .hud strong { color: var(--accent); }
-.hud-line { flex: 1; height: 1px; background: rgba(255, 255, 255, 0.1); margin: 0 1rem; }
+.hud-line { flex: 1; height: 1px; background: rgba(255, 255, 255, 0.1); margin: 0 0.5rem; }
 .center-nav { align-self: flex-start; writing-mode: vertical-rl; transform: rotate(180deg); margin: auto 0; }
 
 .viewport {
     position: fixed;
     inset: 0;
-    perspective: 1200px;
+    perspective: 1000px;
     z-index: 10;
     pointer-events: none;
 }
@@ -62,7 +71,6 @@ body, html {
     top: 50%;
     left: 50%;
     transform-style: preserve-3d;
-    pointer-events: none;
 }
 
 .item {
@@ -72,21 +80,23 @@ body, html {
 }
 
 .card {
-    width: 380px;
-    height: 500px;
+    width: 85vw;
+    max-width: 380px;
+    height: 450px;
     background: var(--card-bg);
     border: 1px solid var(--border);
-    padding: 2.5rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     backdrop-filter: blur(20px);
     box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9);
     transform: translate(-50%, -50%);
     pointer-events: auto;
+    box-sizing: border-box;
 }
 
-.card h2 { font-size: 1.5rem; border-bottom: 2px solid var(--accent); padding-bottom: 12px; margin-bottom: 25px; color: #fff; }
-.card p { font-family: var(--font-code); font-size: 0.95rem; line-height: 1.8; color: #fff; margin: 0; }
+.card h2 { font-size: 1.2rem; border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-bottom: 15px; color: #fff; }
+.card p { font-family: var(--font-code); font-size: 0.8rem; line-height: 1.6; color: #fff; margin: 0; }
 
 .card a {
     display: inline-block;
@@ -95,16 +105,24 @@ body, html {
     border-bottom: 1px solid var(--accent);
     font-weight: 800;
     cursor: pointer !important;
-    pointer-events: auto !important;
 }
 
 .big-text {
-    font-size: 15vw;
+    font-size: 20vw;
     font-weight: 800;
     color: #fff;
-    text-shadow: 0 0 50px rgba(0, 243, 255, 0.7);
+    text-shadow: 0 0 30px rgba(0, 243, 255, 0.7);
     transform: translate(-50%, -50%);
 }
 
 .star { position: absolute; width: 1.5px; height: 1.5px; background: #fff; }
-.scroll-proxy { height: 15000vh; position: absolute; width: 100%; top: 0; left: 0; z-index: -1; }
+.scroll-proxy { height: 15000vh; width: 100%; position: relative; z-index: 1; pointer-events: none; }
+
+@media (min-width: 768px) {
+    .hud { inset: 2rem; font-size: 10px; }
+    .hud-line { margin: 0 1rem; }
+    .card { padding: 2.5rem; height: 500px; }
+    .card h2 { font-size: 1.5rem; }
+    .card p { font-size: 0.95rem; }
+    .big-text { font-size: 15vw; }
+}
